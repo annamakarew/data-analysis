@@ -49,6 +49,6 @@ end_time = time.perf_counter_ns()
 execution_time = (end_time - start_time) / 1_000_000
 
 # Output the results
+print(f"Execution time: {execution_time:.3f} ms")
 print(f"Most common color: {most_common_color}")
 print(f"Most common coord: {most_common_coord}")
-print(f"Execution time: {execution_time:.3f} ms")
