@@ -41,7 +41,7 @@ df_lazy_filtered = df_lazy_filtered.select(
 # Select the relevant columns
 df_lazy_filtered = df_lazy_filtered.select(['driver_pay', 'tips', 'calc_duration', 'request_datetime', 'pickup_datetime', 'dropoff_datetime', 'trip_miles', 'PULocationID', 'DOLocationID'])
 
-# Filter outliers based on tips and base pay
+# Filter outliers
 df_lazy_filtered = filter_outliers(df_lazy_filtered, 'tips')
 df_lazy_filtered = filter_outliers(df_lazy_filtered, 'driver_pay')
 df_lazy_filtered = filter_outliers(df_lazy_filtered, 'calc_duration')
@@ -51,7 +51,7 @@ df_lazy_filtered = df_lazy_filtered.filter(
     pl.col('calc_duration') > 0
 )
 
-# Assuming pickup_datetime is a datetime column, extract date components
+# extract date components
 df_time = df_lazy_filtered.with_columns(
     pl.col('pickup_datetime').dt.month().alias('month'),
     pl.col('pickup_datetime').dt.year().alias('year')
@@ -110,7 +110,7 @@ plt.xlabel('Type')
 plt.ylabel('Amount')
 plt.show()
 
-# Assuming pickup_datetime is a datetime column, extract date components
+# extract date components
 df_time = df_lazy_filtered.with_columns(
     pl.col('pickup_datetime').dt.month().alias('month')
 )
@@ -154,7 +154,6 @@ plt.ylabel('Average Tip')
 plt.tight_layout()
 plt.show()
 
-# Assuming 'calc_duration' is the trip duration in seconds
 plt.figure(figsize=(8, 6))
 plt.scatter(df_plotting_df['calc_duration'], df_plotting_df['tips'], alpha=0.5, color='red')
 plt.title('Relationship Between Trip Duration and Tips')
