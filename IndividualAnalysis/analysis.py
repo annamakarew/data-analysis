@@ -32,7 +32,7 @@ df_lazy_filtered = df_lazy_filtered.with_columns(
     ((pl.col('dropoff_datetime') - pl.col('pickup_datetime')) / 1e9).cast(pl.Int64).alias('calc_duration')    
 )
 
-# Reduce precision lazily (only after performing necessary operations)
+# Reduce precision
 df_lazy_filtered = df_lazy_filtered.select(
     [pl.col(col).cast(pl.Float32) if df_lazy_filtered.schema[col] == pl.Float64 else pl.col(col) 
      for col in df_lazy_filtered.columns]
