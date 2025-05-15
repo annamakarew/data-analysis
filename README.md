@@ -95,7 +95,7 @@ In Week 4, the focus shifted to analyzing color data in a **Parquet** file forma
 
 ---
 
-## Week 5: NYC Rideshare Data Analysis
+## Week 5: Comparing Polars and PySpark
 
 In Week 5, I compared **Polars** and **PySpark** for processing the dataset. The objective was to find the closest color to Cal Poly green using both tools and evaluate their performance in terms of speed, memory efficiency, and ease of use.
 
