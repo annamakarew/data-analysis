@@ -6,12 +6,12 @@ analysis of NYC rideshare data, focusing on tips, base fares, and driver earning
 
 ## Table of Contents
 
-* [Week 1: Data Processing with Python](#Week-1:-Data-Processing-with-Python)
-* [Week 2: Comparing DuckDB, Polars, and Pandas](#Week-2:-Comparing-DuckDB,-Polars,-and-Pandas)
-* [Week 3: Data Transformation and Aggregation with Polars](#Week-3:-data-transformation-and-aggregation-with-polars)
-* [Week 4: Color Analysis and Parquet Data](#Week-4:-color-analysis-and-parquet-data)
-* [Week 5: Comparing Polars and PySpark](#Week-5:-comparing-polars-and-pyspark)
-* [Final Project: NYC Rideshare Data Analysis](#Final-project:-NYC-rideshare-data-analysis)
+- [Week 1: Data Processing with Python](#week-1-data-processing-with-python)
+- [Week 2: Comparing DuckDB, Polars, and Pandas](#week-2-comparing-duckdb-polars-and-pandas)
+- [Week 3: Data Transformation and Aggregation with Polars](#week-3-data-transformation-and-aggregation-with-polars)
+- [Week 4: Color Analysis and Parquet Data](#week-4-color-analysis-and-parquet-data)
+- [Week 5: Comparing Polars and PySpark](#week-5-comparing-polars-and-pyspark)
+- [Final Project: NYC Rideshare Data Analysis](#final-project-nyc-rideshare-data-analysis)
 
 ## Week 1: Data Processing with Python
 
