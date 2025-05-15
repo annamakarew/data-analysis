@@ -1,4 +1,4 @@
-# README: Data Science Projects (Weeks 1–5)
+# README: Data Science Projects
 
 This repository contains code and analysis from my data science projects, developed during a class focused on data manipulation, processing, and analysis using 
 tools like PySpark, DuckDB, Polars, and Pandas. Below is a breakdown of each week's project and its respective objectives. The final project includes an 
